@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service — AJ Maison Shortlet</title>
+    <meta name="description" content="Terms of Service for AJ Maison Shortlet, a luxury serviced apartment in Lekki, Lagos.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --gold: #B8922A;
+            --gold-dim: rgba(184, 146, 42, 0.25);
+            --navy: #1A1A2E;
+            --parchment: #F8F5F0;
+            --charcoal: #2C2C2C;
+            --muted: #6B6B6B;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--parchment);
+            color: var(--charcoal);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 0.03;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+        }
+
+        header {
+            background: var(--navy);
+            padding: 2rem 2rem 3rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+        }
+
+        .deco-ring {
+            position: absolute;
+            border-radius: 50%;
+            border: 1px solid rgba(184, 146, 42, 0.07);
+            pointer-events: none;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .header-eyebrow {
+            font-size: 0.65rem;
+            font-weight: 500;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+
+        .header-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(2rem, 5vw, 3.25rem);
+            font-weight: 300;
+            color: var(--parchment);
+            letter-spacing: -0.02em;
+            line-height: 1.1;
+            margin-bottom: 0.75rem;
+        }
+
+        .header-date {
+            font-size: 0.8rem;
+            color: rgba(248, 245, 240, 0.35);
+            letter-spacing: 0.04em;
+        }
+
+        .back-bar {
+            background: var(--navy);
+            padding: 0.75rem 2rem;
+        }
+
+        .back-link {
+            font-size: 0.75rem;
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--gold);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            opacity: 0.8;
+            transition: opacity 0.2s;
+        }
+
+        .back-link:hover { opacity: 1; }
+
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 4rem 2rem 6rem;
+        }
+
+        .intro {
+            border-left: 2px solid var(--gold);
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 3rem;
+            background: rgba(184, 146, 42, 0.04);
+            border-radius: 0 4px 4px 0;
+        }
+
+        .intro p {
+            font-size: 0.9375rem;
+            line-height: 1.75;
+            color: var(--muted);
+        }
+
+        .intro strong { color: var(--charcoal); font-weight: 500; }
+
+        .policy-section {
+            margin-bottom: 2.5rem;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.55s ease, transform 0.55s ease;
+        }
+
+        .policy-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .section-num {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: var(--gold);
+            line-height: 1;
+            min-width: 1.75rem;
+        }
+
+        .section-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.35rem;
+            font-weight: 500;
+            color: var(--navy);
+            letter-spacing: -0.01em;
+        }
+
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, var(--gold-dim), transparent);
+            margin-bottom: 1rem;
+        }
+
+        .policy-section p {
+            font-size: 0.9375rem;
+            line-height: 1.8;
+            color: #4A4A4A;
+            margin-bottom: 0.75rem;
+        }
+
+        .policy-section p:last-child { margin-bottom: 0; }
+
+        .policy-list {
+            list-style: none;
+            margin: 0.5rem 0;
+        }
+
+        .policy-list li {
+            font-size: 0.9375rem;
+            line-height: 1.75;
+            color: #4A4A4A;
+            padding: 0.3rem 0 0.3rem 1.5rem;
+            position: relative;
+        }
+
+        .policy-list li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.85rem;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--gold);
+            opacity: 0.6;
+        }
+
+        .policy-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 0.75rem;
+        }
+
+        .policy-link {
+            font-size: 0.8125rem;
+            font-weight: 500;
+            color: var(--gold);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            border-bottom: 1px solid rgba(184, 146, 42, 0.3);
+            padding-bottom: 1px;
+            transition: border-color 0.2s, opacity 0.2s;
+        }
+
+        .policy-link:hover { border-color: var(--gold); opacity: 0.8; }
+
+        .contact-box {
+            background: var(--navy);
+            border-radius: 6px;
+            padding: 1.5rem 2rem;
+            margin-top: 1rem;
+            border: 1px solid rgba(184, 146, 42, 0.2);
+        }
+
+        .contact-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.15rem;
+            font-weight: 500;
+            color: var(--parchment);
+            margin-bottom: 0.6rem;
+        }
+
+        .contact-row {
+            font-size: 0.875rem;
+            color: rgba(248, 245, 240, 0.6);
+            margin-bottom: 0.35rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .contact-row a { color: var(--gold); text-decoration: none; }
+        .contact-row a:hover { text-decoration: underline; }
+
+        .contact-dot {
+            width: 4px; height: 4px;
+            border-radius: 50%;
+            background: var(--gold);
+            opacity: 0.5;
+            flex-shrink: 0;
+        }
+
+        footer {
+            background: var(--navy);
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+        }
+
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+        }
+
+        .footer-brand {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1rem;
+            font-weight: 300;
+            color: rgba(248, 245, 240, 0.4);
+            letter-spacing: 0.05em;
+            margin-bottom: 0.4rem;
+        }
+
+        .footer-copy {
+            font-size: 0.75rem;
+            color: rgba(248, 245, 240, 0.2);
+        }
+
+        .footer-home {
+            display: inline-block;
+            margin-top: 1rem;
+            font-size: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--gold);
+            text-decoration: none;
+            opacity: 0.7;
+            transition: opacity 0.2s;
+        }
+
+        .footer-home:hover { opacity: 1; }
+
+        @media (max-width: 600px) {
+            main { padding: 2.5rem 1.25rem 4rem; }
+            header { padding: 1.75rem 1.25rem 2.5rem; }
+            .section-title { font-size: 1.15rem; }
+            .contact-box { padding: 1.25rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="deco-ring" style="width:300px;height:300px;"></div>
+        <div class="deco-ring" style="width:500px;height:500px;opacity:0.4;"></div>
+        <p class="header-eyebrow">AJ Maison Shortlet · Lagos, Nigeria</p>
+        <h1 class="header-title">Terms of Service</h1>
+        <p class="header-date">Last updated: March 2026</p>
+    </header>
+
+    <div class="back-bar">
+        <a href="index.html" class="back-link">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+            Back to Home
+        </a>
+    </div>
+
+    <main>
+
+        <div class="intro">
+            <p>By booking or staying at <strong>AJ Maison Shortlet</strong>, you agree to the following terms. These are intentionally brief — if you have any questions, just ask us directly.</p>
+        </div>
+
+        <!-- 1. Bookings -->
+        <div class="policy-section">
+            <div class="section-header">
+                <span class="section-num">01</span>
+                <h2 class="section-title">Bookings</h2>
+            </div>
+            <div class="section-divider"></div>
+            <p>A booking is confirmed only once we have acknowledged it in writing via WhatsApp or phone, and payment has been received. We reserve the right to decline any booking at our discretion.</p>
+            <p>The minimum stay is <strong>2 nights</strong>. Check-in is from <strong>3:00 PM</strong> and check-out is by <strong>11:00 AM</strong>. Early check-in or late check-out may be available on request.</p>
+        </div>
+
+        <!-- 2. Guest Conduct -->
+        <div class="policy-section">
+            <div class="section-header">
+                <span class="section-num">02</span>
+                <h2 class="section-title">Guest Conduct</h2>
+            </div>
+            <div class="section-divider"></div>
+            <p>Guests are expected to treat the apartment and its contents with care. The following are not permitted:</p>
+            <ul class="policy-list">
+                <li>Parties, events, or gatherings beyond the registered number of guests</li>
+                <li>Smoking inside the apartment</li>
+                <li>Pets, unless explicitly agreed in advance</li>
+                <li>Any illegal activity on the premises</li>
+            </ul>
+            <p>Violation of these terms may result in immediate termination of your stay without a refund.</p>
+        </div>
+
+        <!-- 3. Damages -->
+        <div class="policy-section">
+            <div class="section-header">
+                <span class="section-num">03</span>
+                <h2 class="section-title">Damages & Liability</h2>
+            </div>
+            <div class="section-divider"></div>
+            <p>Guests are liable for any damage caused to the property, furnishings, or equipment during their stay. The cost of repairs or replacements will be deducted from the caution deposit. If costs exceed the deposit amount, the guest will be invoiced for the difference.</p>
+            <p>AJ Maison Shortlet is not liable for loss, theft, or damage to guests' personal belongings during their stay.</p>
+        </div>
+
+        <!-- 4. Cancellations & Refunds -->
+        <div class="policy-section">
+            <div class="section-header">
+                <span class="section-num">04</span>
+                <h2 class="section-title">Cancellations & Refunds</h2>
+            </div>
+            <div class="section-divider"></div>
+            <p>Our full cancellation and refund terms are outlined in our Cancellation Policy. In summary: cancellations made more than 72 hours before check-in receive a full refund; later cancellations may be non-refundable.</p>
+            <div class="policy-links">
+                <a href="cancellation.html" class="policy-link">
+                    Read Cancellation Policy
+                    <svg width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- 5. Privacy -->
+        <div class="policy-section">
+            <div class="section-header">
+                <span class="section-num">05</span>
+                <h2 class="section-title">Privacy</h2>
+            </div>
+            <div class="section-divider"></div>
+            <p>We collect only the information necessary to process your booking and verify your identity. We do not sell or share your data with third parties. Full details are in our Privacy Policy.</p>
+            <div class="policy-links">
+                <a href="privacy.html" class="policy-link">
+                    Read Privacy Policy
+                    <svg width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- 6. Governing Law -->
+        <div class="policy-section">
+            <div class="section-header">
+                <span class="section-num">06</span>
+                <h2 class="section-title">Governing Law</h2>
+            </div>
+            <div class="section-divider"></div>
+            <p>These terms are governed by the laws of the Federal Republic of Nigeria. Any disputes will be resolved under Nigerian jurisdiction.</p>
+        </div>
+
+        <!-- 7. Contact -->
+        <div class="policy-section">
+            <div class="section-header">
+                <span class="section-num">07</span>
+                <h2 class="section-title">Questions?</h2>
+            </div>
+            <div class="section-divider"></div>
+            <p>If anything here is unclear, reach out — we're happy to explain.</p>
+            <div class="contact-box">
+                <div class="contact-name">AJ Maison Shortlet</div>
+                <div class="contact-row">
+                    <span class="contact-dot"></span>
+                    <a href="mailto:info@ajmaisonshortlet.com">info@ajmaisonshortlet.com</a>
+                </div>
+                <div class="contact-row">
+                    <span class="contact-dot"></span>
+                    WhatsApp / Phone: available on our homepage
+                </div>
+                <div class="contact-row">
+                    <span class="contact-dot"></span>
+                    Ikate, Lekki, Lagos, Nigeria
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-brand">AJ Maison Shortlet</div>
+        <div class="footer-copy">Ikate, Lekki, Lagos, Nigeria &nbsp;·&nbsp; info@ajmaisonshortlet.com</div>
+        <a href="index.html" class="footer-home">← Return to Homepage</a>
+    </footer>
+
+    <script>
+        const sections = document.querySelectorAll('.policy-section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+        sections.forEach(s => observer.observe(s));
+    </script>
+    <noscript><style>.policy-section { opacity: 1; transform: none; }</style></noscript>
+
+</body>
+</html>

@@ -1,0 +1,2396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJ Maison Shortlet — Luxury Serviced Apartment in Lagos | Short Stay</title>
+    <meta name="description"
+        content="Book AJ Maison Shortlet — a curated, fully furnished serviced apartment in Lagos. Perfect for business travellers, diaspora returnees, and visitors. Book via WhatsApp.">
+    <meta property="og:title" content="AJ Maison Shortlet — Luxury Serviced Apartment in Lagos">
+    <meta property="og:description"
+        content="A curated, fully furnished serviced apartment in Lagos. Book via WhatsApp.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="brand_assets/IMG_2490.JPG.jpeg">
+    <meta property="og:url" content="https://yourdomain.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'aj-gold': '#B8922A',
+                        'aj-gold-dark': '#96770E',
+                        'aj-navy': '#1A1A2E',
+                        'aj-teal': '#5BBFBA',
+                        'aj-oak': '#C8945A',
+                        'aj-parchment': '#F8F5F0',
+                        'aj-charcoal': '#1A1A1A',
+                        'aj-black': '#0a0a0a',
+                    },
+                    fontFamily: {
+                        'display': ['"Cormorant Garamond"', 'serif'],
+                        'body': ['"DM Sans"', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Scroll offset for fixed nav */
+        section[id] {
+            scroll-margin-top: 5.5rem;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            color: #d3d0cb;
+            background: #1A1A2E;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Noise grain overlay */
+        .grain::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 0.04;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+        }
+
+        /* Typography */
+        .heading-h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(3rem, 6vw, 5.5rem);
+            font-weight: 300;
+            letter-spacing: -0.03em;
+            line-height: 1.05;
+            color: #F8F5F0;
+        }
+
+        .heading-h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(2.25rem, 4vw, 3.5rem);
+            font-weight: 300;
+            letter-spacing: -0.02em;
+            line-height: 1.1;
+        }
+
+        .label-tag {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.6875rem;
+            font-weight: 500;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #B8922A;
+        }
+
+        .body-text {
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.7;
+        }
+
+        /* Gold line divider */
+        .gold-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(184, 146, 42, 0.35), transparent);
+        }
+
+        /* ── Interactive Hover Buttons ── */
+        .btn-primary,
+        .btn-ghost {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.8125rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 1rem 2rem;
+            border-radius: 2px;
+            text-decoration: none;
+            overflow: hidden;
+            cursor: pointer;
+            border: none;
+        }
+
+        /* Primary: gold bg, dark text */
+        .btn-primary {
+            background: linear-gradient(135deg, #B8922A, #96770E);
+            color: #1A1A2E;
+            box-shadow: 0 4px 20px rgba(184, 146, 42, 0.25), 0 2px 8px rgba(184, 146, 42, 0.15);
+        }
+
+        /* Ghost: transparent bg, gold border/text */
+        .btn-ghost {
+            background: transparent;
+            color: #B8922A;
+            border: 1px solid rgba(184, 146, 42, 0.4);
+        }
+
+        /* Default text — slides out on hover */
+        .btn-primary .btn-text,
+        .btn-ghost .btn-text {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transform: translateX(0.25rem);
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s ease;
+        }
+
+        .btn-primary:hover .btn-text,
+        .btn-ghost:hover .btn-text {
+            transform: translateX(3rem);
+            opacity: 0;
+        }
+
+        /* Hover text + arrow — slides in from right */
+        .btn-primary .btn-hover,
+        .btn-ghost .btn-hover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            width: 100%;
+            height: 100%;
+            transform: translateX(3rem);
+            opacity: 0;
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s ease;
+        }
+
+        .btn-primary:hover .btn-hover,
+        .btn-ghost:hover .btn-hover {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        /* Primary hover text is light (on dark fill) */
+        .btn-primary .btn-hover {
+            color: #F8F5F0;
+        }
+
+        /* Ghost hover text is dark navy (on gold fill) */
+        .btn-ghost .btn-hover {
+            color: #1A1A2E;
+        }
+
+        /* Expanding circle fill */
+        .btn-primary .btn-fill,
+        .btn-ghost .btn-fill {
+            position: absolute;
+            left: 20%;
+            top: 40%;
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 50%;
+            transform: scale(0);
+            transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
+                        left 0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
+                        top 0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
+                        width 0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
+                        height 0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
+                        border-radius 0.35s ease;
+        }
+
+        /* Primary fill: dark navy circle */
+        .btn-primary .btn-fill {
+            background: #1A1A2E;
+        }
+
+        /* Ghost fill: gold circle */
+        .btn-ghost .btn-fill {
+            background: linear-gradient(135deg, #B8922A, #96770E);
+        }
+
+        .btn-primary:hover .btn-fill,
+        .btn-ghost:hover .btn-fill {
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 2px;
+            transform: scale(1.1);
+        }
+
+        /* Arrow icon in hover state */
+        .btn-hover-arrow {
+            width: 1rem;
+            height: 1rem;
+            flex-shrink: 0;
+        }
+
+        /* Focus & active states */
+        .btn-primary:focus-visible,
+        .btn-ghost:focus-visible {
+            outline: 2px solid #B8922A;
+            outline-offset: 3px;
+        }
+
+        .btn-primary:active .btn-fill,
+        .btn-ghost:active .btn-fill {
+            transform: scale(1.05);
+        }
+
+        /* Box-shadow lift on hover for primary */
+        .btn-primary:hover {
+            box-shadow: 0 8px 30px rgba(184, 146, 42, 0.35), 0 4px 12px rgba(184, 146, 42, 0.2);
+        }
+
+        /* Ghost: subtle shadow on hover */
+        .btn-ghost:hover {
+            box-shadow: 0 4px 20px rgba(184, 146, 42, 0.2);
+        }
+
+        /* Glass card (dark sections) */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(184, 146, 42, 0.15);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(184, 146, 42, 0.08);
+            border-radius: 4px;
+            transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(184, 146, 42, 0.12);
+        }
+
+        /* Light card */
+        .light-card {
+            background: #fff;
+            border: 1px solid rgba(184, 146, 42, 0.12);
+            box-shadow: 0 4px 24px rgba(184, 146, 42, 0.06), 0 1px 4px rgba(0, 0, 0, 0.04);
+            border-radius: 4px;
+            transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+        }
+
+        .light-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(184, 146, 42, 0.1), 0 4px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        /* Fade-up animation */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* FAQ accordion */
+        details summary {
+            cursor: pointer;
+            list-style: none;
+        }
+
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+
+        details summary::marker {
+            display: none;
+        }
+
+        details[open] summary .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        /* Nav scroll state */
+        .nav-scrolled {
+            background: rgba(10, 10, 10, 0.95) !important;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Mobile menu */
+        .mobile-menu {
+            transform: translateX(100%);
+            transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .mobile-menu.open {
+            transform: translateX(0);
+        }
+
+        .backdrop-visible {
+            opacity: 1 !important;
+            pointer-events: auto !important;
+        }
+
+        /* Bento gallery grid */
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 240px 240px 200px;
+            gap: 0.875rem;
+        }
+
+        .bento-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            cursor: pointer;
+            border: 1px solid rgba(184, 146, 42, 0.15);
+            box-shadow: 0 4px 20px rgba(184, 146, 42, 0.06), 0 2px 8px rgba(0, 0, 0, 0.08);
+            transition: box-shadow 0.4s ease;
+        }
+
+        .bento-item:hover {
+            box-shadow: 0 12px 40px rgba(184, 146, 42, 0.12), 0 4px 16px rgba(0, 0, 0, 0.12);
+        }
+
+        .bento-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .bento-item:hover img {
+            transform: scale(1.06);
+        }
+
+        /* No separate stagger — fade-up on the grid handles entrance */
+        .bento-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(26, 26, 46, 0.85) 0%, rgba(26, 26, 46, 0.2) 40%, transparent 100%);
+            opacity: 0;
+            transition: opacity 0.35s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 1.25rem;
+        }
+
+        .bento-item:hover .bento-overlay {
+            opacity: 1;
+        }
+
+        .bento-overlay h4 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.15rem;
+            font-weight: 500;
+            color: #F8F5F0;
+            margin-bottom: 0.15rem;
+        }
+
+        .bento-overlay p {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.75rem;
+            color: rgba(184, 146, 42, 0.8);
+            letter-spacing: 0.05em;
+        }
+
+        /* Gallery lightbox modal */
+        .gallery-modal {
+            position: fixed;
+            inset: 0;
+            z-index: 10000;
+            background: rgba(10, 10, 10, 0.92);
+            backdrop-filter: blur(16px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.35s ease;
+        }
+
+        .gallery-modal.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .gallery-modal .modal-img-wrap {
+            position: relative;
+            max-width: 90vw;
+            max-height: 75vh;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 24px 80px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(184, 146, 42, 0.15);
+            transform: scale(0.92) translateY(24px);
+            transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .gallery-modal.active .modal-img-wrap {
+            transform: scale(1) translateY(0);
+        }
+
+        .gallery-modal .modal-img-wrap img {
+            display: block;
+            max-width: 90vw;
+            max-height: 75vh;
+            object-fit: contain;
+        }
+
+        .gallery-modal .modal-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 1.5rem;
+            background: linear-gradient(to top, rgba(10, 10, 10, 0.8), transparent);
+        }
+
+        .gallery-modal .modal-caption h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: #F8F5F0;
+        }
+
+        .gallery-modal .modal-caption p {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.8rem;
+            color: rgba(248, 245, 240, 0.6);
+            margin-top: 0.25rem;
+        }
+
+        .gallery-modal .modal-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            z-index: 10;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: rgba(248, 245, 240, 0.1);
+            border: 1px solid rgba(184, 146, 42, 0.25);
+            color: #F8F5F0;
+            font-size: 1.25rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .gallery-modal .modal-close:hover {
+            background: rgba(184, 146, 42, 0.2);
+            transform: scale(1.1);
+        }
+
+        /* Thumbnail dock */
+        .thumb-dock {
+            position: fixed;
+            bottom: 1.25rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10001;
+            display: flex;
+            align-items: center;
+            gap: 0;
+            padding: 0.5rem 0.75rem;
+            background: rgba(184, 146, 42, 0.12);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(184, 146, 42, 0.25);
+            border-radius: 1rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.35s ease;
+        }
+
+        .thumb-dock.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .thumb-dock .thumb {
+            width: 40px;
+            height: 40px;
+            flex-shrink: 0;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+            margin-left: -6px;
+            border: 2px solid transparent;
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), border-color 0.2s ease;
+            transform: rotate(0deg);
+        }
+
+        .thumb-dock .thumb:first-child {
+            margin-left: 0;
+        }
+
+        .thumb-dock .thumb:nth-child(odd) {
+            transform: rotate(-12deg);
+        }
+
+        .thumb-dock .thumb:nth-child(even) {
+            transform: rotate(12deg);
+        }
+
+        .thumb-dock .thumb:hover {
+            transform: scale(1.3) rotate(0deg) translateY(-8px);
+            z-index: 5;
+        }
+
+        .thumb-dock .thumb.active-thumb {
+            border-color: rgba(248, 245, 240, 0.7);
+            transform: scale(1.25) rotate(0deg) translateY(-8px);
+            z-index: 10;
+            box-shadow: 0 4px 16px rgba(184, 146, 42, 0.3);
+        }
+
+        .thumb-dock .thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            .bento-grid {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: 240px 180px 180px 180px;
+            }
+
+            .bento-grid .bento-item {
+                grid-column: auto !important;
+                grid-row: auto !important;
+            }
+
+            .bento-grid .bento-item:first-child {
+                grid-column: 1 / -1 !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .bento-grid {
+                grid-template-rows: 220px 160px 160px 160px;
+            }
+
+            .thumb-dock .thumb {
+                width: 34px;
+                height: 34px;
+            }
+        }
+
+        /* Stagger delays */
+        .stagger-1 {
+            transition-delay: 0.1s;
+        }
+
+        .stagger-2 {
+            transition-delay: 0.2s;
+        }
+
+        .stagger-3 {
+            transition-delay: 0.3s;
+        }
+
+        .stagger-4 {
+            transition-delay: 0.4s;
+        }
+
+        .stagger-5 {
+            transition-delay: 0.5s;
+        }
+
+        .stagger-6 {
+            transition-delay: 0.6s;
+        }
+
+        /* ===== MOBILE OPTIMIZATIONS ===== */
+        @media (max-width: 640px) {
+
+            /* Reduce section padding on mobile */
+            .section-dark,
+            .section-light {
+                padding-top: 4.5rem;
+                padding-bottom: 4.5rem;
+            }
+
+            /* Hero adjustments */
+            .heading-h1 {
+                font-size: clamp(2.25rem, 10vw, 3.5rem);
+            }
+
+            .heading-h2 {
+                font-size: clamp(1.75rem, 7vw, 2.5rem);
+            }
+
+            /* Body text slightly smaller on mobile */
+            .body-text {
+                font-size: 0.9375rem;
+                line-height: 1.65;
+            }
+
+            /* Buttons: full width on mobile */
+            .btn-primary,
+            .btn-ghost {
+                padding: 0.875rem 1.5rem;
+                font-size: 0.75rem;
+                width: 100%;
+                justify-content: center;
+            }
+
+            /* Glass cards: less padding on mobile */
+            .glass-card {
+                padding: 1.5rem !important;
+            }
+
+            /* Why section image: let it breathe on mobile */
+            .why-image {
+                max-height: none;
+                aspect-ratio: 3 / 4;
+                object-fit: cover;
+                object-position: center;
+            }
+
+            /* Gallery: single column, generous image heights */
+            /* Section header margins */
+            .section-header {
+                margin-bottom: 2.5rem !important;
+            }
+
+            /* Trust bar: tighter on mobile */
+            .trust-item {
+                padding: 0.75rem 0.5rem;
+            }
+
+            /* Reviews: reduce padding */
+            .light-card {
+                padding: 1.5rem !important;
+            }
+
+            /* Review text smaller */
+            .review-quote {
+                font-size: 0.9375rem !important;
+            }
+
+            /* FAQ: tighter summary padding */
+            details summary {
+                padding: 1rem 1.25rem !important;
+            }
+
+            details>div {
+                padding: 0 1.25rem 1.25rem !important;
+            }
+
+            /* Value blocks in Why section */
+            .value-block {
+                padding-left: 1.25rem !important;
+            }
+
+            /* Booking "What's Included" card */
+            .included-card {
+                padding: 1.5rem !important;
+            }
+
+            /* Bottom padding for sticky bar */
+            footer {
+                padding-bottom: 4.5rem;
+            }
+
+            /* Footer grid: 2-col on mobile */
+            .footer-grid {
+                grid-template-columns: 1fr 1fr !important;
+                gap: 2rem !important;
+            }
+
+            /* Disable hover transforms on touch */
+            .glass-card:hover,
+            .light-card:hover {
+                transform: none;
+            }
+
+            /* Feature cards: 2-col on small screens for tighter layout */
+            .features-grid {
+                grid-template-columns: 1fr !important;
+                gap: 1rem !important;
+            }
+
+            /* Nav logo */
+            .nav-logo {
+                height: 6rem;
+                width: auto;
+                object-fit: contain;
+            }
+
+            /* Reduce decorative circle sizes */
+            .deco-ring-1 {
+                width: 300px !important;
+                height: 300px !important;
+            }
+
+            .deco-ring-2 {
+                width: 420px !important;
+                height: 420px !important;
+            }
+        }
+
+        /* Medium screens (tablets) */
+        @media (max-width: 768px) and (min-width: 641px) {
+            .heading-h1 {
+                font-size: clamp(2.5rem, 8vw, 4rem);
+            }
+
+            .floating-quote {
+                position: relative !important;
+                bottom: auto !important;
+                right: auto !important;
+                margin-top: 1rem;
+                max-width: 100% !important;
+            }
+
+            footer {
+                padding-bottom: 4.5rem;
+            }
+
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+        }
+
+        /* Floating quote: make static on all sub-desktop widths */
+        @media (max-width: 1023px) {
+            .floating-quote {
+                position: relative !important;
+                bottom: auto !important;
+                right: auto !important;
+                margin-top: 1rem;
+                max-width: 100% !important;
+            }
+        }
+
+        /* Scrolling testimonial columns */
+        @keyframes scroll-up {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-50%);
+            }
+        }
+
+        .testimonial-col {
+            animation: scroll-up linear infinite;
+        }
+
+        .testimonial-col:hover {
+            animation-play-state: paused;
+        }
+
+        .testimonial-col-1 {
+            animation-duration: 25s;
+        }
+
+        .testimonial-col-2 {
+            animation-duration: 30s;
+        }
+
+        .testimonial-col-3 {
+            animation-duration: 22s;
+        }
+
+        .testimonial-mask {
+            -webkit-mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
+            mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);
+        }
+
+        .testimonial-card {
+            background: #fff;
+            border: 1px solid rgba(184, 146, 42, 0.12);
+            border-radius: 1.25rem;
+            padding: 2rem;
+            box-shadow: 0 4px 24px rgba(184, 146, 42, 0.06), 0 1px 4px rgba(0, 0, 0, 0.04);
+        }
+
+        /* Ensure touch targets are at least 44px */
+        @media (pointer: coarse) {
+
+            .btn-primary,
+            .btn-ghost {
+                min-height: 48px;
+            }
+
+            details summary {
+                min-height: 48px;
+            }
+
+            nav a {
+                min-height: 44px;
+                display: inline-flex;
+                align-items: center;
+            }
+
+            #menuToggle {
+                min-width: 44px;
+                min-height: 44px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .social-icon {
+                min-width: 44px;
+                min-height: 44px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            footer a {
+                min-height: 44px;
+                display: inline-flex;
+                align-items: center;
+            }
+        }
+    </style>
+
+    <!-- JSON-LD: LodgingBusiness -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LodgingBusiness",
+        "name": "AJ Maison Shortlet",
+        "description": "A curated, fully furnished serviced shortlet apartment in Lekki, Lagos. Perfect for business travellers, diaspora returnees, and visitors.",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Lekki, Ikate",
+            "addressLocality": "Lagos",
+            "addressCountry": "NG"
+        },
+        "telephone": "+2348091528083",
+        "priceRange": "$$",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "100"
+        }
+    }
+    </script>
+    <noscript>
+      <style>.fade-up { opacity: 1; transform: none; }</style>
+    </noscript>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+
+<body class="grain">
+
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav id="mainNav" class="fixed top-0 left-0 w-full z-[1000] transition-all duration-300"
+        style="background: rgba(0, 0, 0, 0.85); backdrop-filter: blur(8px);">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between h-20">
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-3">
+                <img src="brand_assets/AJ all white logo.png" alt="AJ Maison Logo" class="nav-logo" width="96"
+                    height="96">
+            </a>
+            <!-- Desktop Nav -->
+            <div class="hidden lg:flex items-center gap-10">
+                <a href="#features"
+                    class="font-body text-sm tracking-wide text-aj-parchment/70 hover:text-aj-gold transition-colors duration-300">Features</a>
+                <a href="#gallery"
+                    class="font-body text-sm tracking-wide text-aj-parchment/70 hover:text-aj-gold transition-colors duration-300">Gallery</a>
+                <a href="#why"
+                    class="font-body text-sm tracking-wide text-aj-parchment/70 hover:text-aj-gold transition-colors duration-300">Why
+                    Us</a>
+                <a href="#reviews"
+                    class="font-body text-sm tracking-wide text-aj-parchment/70 hover:text-aj-gold transition-colors duration-300">Reviews</a>
+                <a href="#faq"
+                    class="font-body text-sm tracking-wide text-aj-parchment/70 hover:text-aj-gold transition-colors duration-300">FAQ</a>
+            </div>
+            <!-- Book Now CTA -->
+            <a href="#booking" class="hidden lg:inline-flex btn-primary text-xs py-3 px-6">Book Now</a>
+            <!-- Mobile Hamburger -->
+            <button id="menuToggle" class="lg:hidden flex flex-col gap-1.5 p-3" aria-label="Toggle menu"
+                aria-expanded="false">
+                <span class="block w-6 h-0.5 bg-aj-parchment transition-transform duration-300 origin-center"
+                    id="bar1"></span>
+                <span class="block w-6 h-0.5 bg-aj-parchment transition-opacity duration-300" id="bar2"></span>
+                <span class="block w-6 h-0.5 bg-aj-parchment transition-transform duration-300 origin-center"
+                    id="bar3"></span>
+            </button>
+        </div>
+        <!-- Mobile Menu Backdrop -->
+        <div id="menuBackdrop"
+            class="fixed inset-0 bg-black/50 z-[-1] opacity-0 pointer-events-none transition-opacity duration-300 lg:hidden">
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu"
+            class="mobile-menu fixed top-0 right-0 w-72 h-screen bg-aj-black/98 backdrop-blur-xl flex flex-col pt-24 px-8 gap-6 lg:hidden">
+            <a href="#features"
+                class="font-body text-lg text-aj-parchment/80 hover:text-aj-gold transition-colors duration-300 mobile-link">Features</a>
+            <a href="#gallery"
+                class="font-body text-lg text-aj-parchment/80 hover:text-aj-gold transition-colors duration-300 mobile-link">Gallery</a>
+            <a href="#why"
+                class="font-body text-lg text-aj-parchment/80 hover:text-aj-gold transition-colors duration-300 mobile-link">Why
+                Us</a>
+            <a href="#reviews"
+                class="font-body text-lg text-aj-parchment/80 hover:text-aj-gold transition-colors duration-300 mobile-link">Reviews</a>
+            <a href="#faq"
+                class="font-body text-lg text-aj-parchment/80 hover:text-aj-gold transition-colors duration-300 mobile-link">FAQ</a>
+            <div class="gold-divider mt-2"></div>
+            <a href="#booking" class="btn-primary text-center justify-center mt-2 mobile-link">Book Now</a>
+            <a href="https://wa.me/2348091528083?text=Hello%2C%20I%E2%80%99d%20like%20to%20book%20AJ%20Maison%20Shortlet%20in%20Lekki."
+                class="btn-ghost text-center justify-center mobile-link">WhatsApp Us</a>
+        </div>
+    </nav>
+
+    <!-- ==================== SECTION 1: HERO ==================== -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden"
+        style="background: #1A1A2E;">
+        <!-- Background layers -->
+        <div class="absolute inset-0"
+            style="background: radial-gradient(ellipse at 20% 50%, rgba(184,146,42,0.12) 0%, transparent 60%), radial-gradient(ellipse at 80% 20%, rgba(91,191,186,0.06) 0%, transparent 50%), radial-gradient(ellipse at 50% 80%, rgba(184,146,42,0.08) 0%, transparent 50%);">
+        </div>
+        <!-- Hero placeholder image with overlay -->
+        <div class="absolute inset-0">
+            <img src="brand_assets/IMG_2490.JPG.jpeg" alt="Luxury shortlet apartment living room in Lagos"
+                class="w-full h-full object-cover opacity-30" loading="eager" fetchpriority="high" width="1920"
+                height="1080">
+            <div class="absolute inset-0 bg-gradient-to-t from-aj-navy via-aj-navy/80 to-aj-navy/40"></div>
+        </div>
+        <!-- Decorative circle ring -->
+        <div
+            class="deco-ring-1 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full border border-aj-gold/[0.07] pointer-events-none">
+        </div>
+        <div
+            class="deco-ring-2 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full border border-aj-gold/[0.04] pointer-events-none">
+        </div>
+
+        <!-- Hero content -->
+        <div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
+            <!-- Location micro-badge -->
+            <div class="fade-up flex items-center justify-center gap-2 mb-8">
+                <svg class="w-4 h-4 text-aj-gold" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/>
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/>
+                </svg>
+                <span class="font-body text-xs tracking-wider text-aj-parchment/50 uppercase">Ikate, Lekki &mdash; Lagos, Nigeria</span>
+            </div>
+
+            <span class="label-tag fade-up stagger-1 inline-block mb-6">Serviced Shortlet in Lagos</span>
+            <h1 class="heading-h1 fade-up stagger-2 mb-6">Experience Lagos,<br>Artfully Curated</h1>
+            <p class="body-text fade-up stagger-3 text-aj-parchment/60 max-w-xl mx-auto mb-10">A fully furnished,
+                design-forward apartment in the heart of Lekki. Comfort, culture, and convenience — all in one stay.</p>
+
+            <div class="fade-up stagger-4 flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://wa.me/2348091528083?text=Hello%2C%20I%E2%80%99d%20like%20to%20book%20AJ%20Maison%20Shortlet%20in%20Lekki."
+                    class="btn-primary">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                    </svg>
+                    Book Your Stay
+                </a>
+                <a href="#gallery" class="btn-ghost">View the Apartment</a>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-40">
+            <span class="font-body text-[10px] tracking-[0.2em] uppercase text-aj-parchment">Scroll</span>
+            <div class="w-px h-8 bg-gradient-to-b from-aj-gold/60 to-transparent"></div>
+        </div>
+    </section>
+
+    <!-- ==================== SECTION 2: TRUST BAR ==================== -->
+    <section class="py-12 lg:py-10" style="background: #F8F5F0;">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-0">
+                <div
+                    class="trust-item flex flex-col items-center text-center lg:border-r lg:border-aj-gold/20 px-4 fade-up">
+                    <svg class="w-6 h-6 mb-2" fill="none" stroke="#B8922A" stroke-width="1.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0l-4.725 2.885a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                    </svg>
+                    <span class="font-body text-sm font-semibold text-aj-charcoal">100+ Five-Star Reviews</span>
+                </div>
+                <div
+                    class="trust-item flex flex-col items-center text-center lg:border-r lg:border-aj-gold/20 px-4 fade-up stagger-1">
+                    <svg class="w-6 h-6 mb-2" fill="none" stroke="#B8922A" stroke-width="1.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <span class="font-body text-sm font-semibold text-aj-charcoal">24/7 Concierge Support</span>
+                </div>
+                <div
+                    class="trust-item flex flex-col items-center text-center lg:border-r lg:border-aj-gold/20 px-4 fade-up stagger-2">
+                    <svg class="w-6 h-6 mb-2" fill="none" stroke="#B8922A" stroke-width="1.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+                    </svg>
+                    <span class="font-body text-sm font-semibold text-aj-charcoal">Verified Superhost</span>
+                </div>
+                <div class="trust-item flex flex-col items-center text-center px-4 fade-up stagger-3">
+                    <svg class="w-6 h-6 mb-2" fill="none" stroke="#B8922A" stroke-width="1.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                    </svg>
+                    <span class="font-body text-sm font-semibold text-aj-charcoal">Secure Instant Booking</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SECTION 3: APARTMENT FEATURES ==================== -->
+    <section id="features" class="section-dark py-28 relative overflow-hidden" style="background: #1A1A2E;">
+        <!-- Gold glow -->
+        <div class="absolute top-0 left-1/4 w-96 h-96 rounded-full opacity-[0.08]"
+            style="background: radial-gradient(circle, #B8922A, transparent 70%);"></div>
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="section-header text-center mb-16">
+                <span class="label-tag fade-up block mb-4">Curated Living</span>
+                <h2 class="heading-h2 text-aj-parchment fade-up stagger-1">Every Detail, Thoughtfully Designed</h2>
+                <div class="gold-divider max-w-xs mx-auto mt-8 fade-up stagger-2"></div>
+            </div>
+
+            <div class="features-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="glass-card p-8 fade-up stagger-1">
+                    <svg class="w-10 h-10 mb-5" fill="none" stroke="#B8922A" stroke-width="1.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 7.5l-2.25-1.313M21 7.5v2.25m0-2.25l-2.25 1.313M3 7.5l2.25-1.313M3 7.5l2.25 1.313M3 7.5v2.25m9 3l2.25-1.313M12 12.75l-2.25-1.313M12 12.75V15m0 6.75l2.25-1.313M12 21.75V19.5m0 2.25l-2.25-1.313m0-16.875L12 2.25l2.25 1.313M21 14.25v2.25l-2.25 1.313m-13.5 0L3 16.5v-2.25" />
+                    </svg>
+                    <h3 class="font-display text-xl text-aj-parchment mb-3 font-normal">King-Sized Bed</h3>
+                    <p class="body-text text-aj-parchment/50 text-sm">Premium linen, plush pillows, and a mattress that
+                        redefines restful nights in Lagos.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="glass-card p-8 fade-up stagger-2">
+                    <svg class="w-10 h-10 mb-5" fill="none" stroke="#B8922A" stroke-width="1.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z" />
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1.001A3.75 3.75 0 0012 18z" />
+                    </svg>
+                    <h3 class="font-display text-xl text-aj-parchment mb-3 font-normal">Fully Equipped Kitchen</h3>
+                    <p class="body-text text-aj-parchment/50 text-sm">Cook your favourite meals with modern appliances,
+                        utensils, and a stocked spice rack.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="glass-card p-8 fade-up stagger-3">
+                    <svg class="w-10 h-10 mb-5" fill="none" stroke="#B8922A" stroke-width="1.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M8.288 15.038a5.25 5.25 0 017.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 011.06 0z" />
+                    </svg>
+                    <h3 class="font-display text-xl text-aj-parchment mb-3 font-normal">High-Speed WiFi</h3>
+                    <p class="body-text text-aj-parchment/50 text-sm">Blazing-fast internet for remote work, streaming,
+                        or staying connected with loved ones.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="glass-card p-8 fade-up stagger-4">
+                    <svg class="w-10 h-10 mb-5" fill="none" stroke="#B8922A" stroke-width="1.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125z" />
+                    </svg>
+                    <h3 class="font-display text-xl text-aj-parchment mb-3 font-normal">Smart TV &amp; Netflix</h3>
+                    <p class="body-text text-aj-parchment/50 text-sm">Unwind with your favourite shows on a large smart
+                        TV with Netflix, YouTube, and more.</p>
+                </div>
+                <!-- Card 5 -->
+                <div class="glass-card p-8 fade-up stagger-5">
+                    <svg class="w-10 h-10 mb-5" fill="none" stroke="#B8922A" stroke-width="1.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                    </svg>
+                    <h3 class="font-display text-xl text-aj-parchment mb-3 font-normal">24/7 Power Supply</h3>
+                    <p class="body-text text-aj-parchment/50 text-sm">Uninterrupted power with inverter backup, so you
+                        never miss a beat.</p>
+                </div>
+                <!-- Card 6 -->
+                <div class="glass-card p-8 fade-up stagger-6">
+                    <svg class="w-10 h-10 mb-5" fill="none" stroke="#B8922A" stroke-width="1.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+                    </svg>
+                    <h3 class="font-display text-xl text-aj-parchment mb-3 font-normal">Secure Parking</h3>
+                    <p class="body-text text-aj-parchment/50 text-sm">Gated compound with dedicated parking space and
+                        24-hour security.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SECTION 4: IMAGE GALLERY (Interactive Bento) ==================== -->
+    <section id="gallery" class="section-light py-28 relative overflow-hidden" style="background: #F8F5F0;">
+        <div class="max-w-5xl mx-auto px-6 relative z-10">
+            <div class="section-header text-center mb-16">
+                <span class="label-tag fade-up block mb-4">The Apartment</span>
+                <h2 class="heading-h2 text-aj-charcoal fade-up stagger-1">A Space That Speaks for Itself</h2>
+                <p class="body-text text-sm mt-4 max-w-md mx-auto fade-up stagger-2" style="color: rgba(26,26,26,0.5);">
+                    Click any image to explore our curated spaces</p>
+                <div class="gold-divider max-w-xs mx-auto mt-8 fade-up stagger-2"></div>
+            </div>
+
+            <!-- Bento Grid — explicit placement, 4 cols × 3 rows -->
+            <div class="bento-grid fade-up" id="bentoGallery">
+                <!-- Item 1: Living room — large hero, top-left 2×2 -->
+                <div class="bento-item" style="grid-column: 1 / 3; grid-row: 1 / 3;" data-title="Living Room"
+                    data-desc="Spacious open-plan living area" data-src="brand_assets/IMG_2496.JPG.jpeg">
+                    <img src="brand_assets/IMG_2496.JPG.jpeg" alt="Spacious open-plan living room" loading="lazy"
+                        width="800" height="600">
+                    <div class="bento-overlay">
+                        <h4>Living Room</h4>
+                        <p>Spacious open-plan living area</p>
+                    </div>
+                </div>
+                <!-- Item 2: Bedroom — top-right single -->
+                <div class="bento-item" style="grid-column: 3 / 4; grid-row: 1 / 2;" data-title="Master Bedroom"
+                    data-desc="King-sized comfort with premium linens" data-src="brand_assets/IMG_2413.JPG.jpeg">
+                    <img src="brand_assets/IMG_2413.JPG.jpeg" alt="King-sized bed luxury bedroom" loading="lazy"
+                        width="600" height="400">
+                    <div class="bento-overlay">
+                        <h4>Master Bedroom</h4>
+                        <p>King-sized comfort</p>
+                    </div>
+                </div>
+                <!-- Item 3: Kitchen — right-side tall, rows 1-2 -->
+                <div class="bento-item" style="grid-column: 4 / 5; grid-row: 1 / 3;" data-title="Kitchen"
+                    data-desc="Modern fully-equipped kitchen" data-src="brand_assets/IMG_2503.JPG.jpeg">
+                    <img src="brand_assets/IMG_2503.JPG.jpeg" alt="Modern kitchen" loading="lazy" width="400"
+                        height="600">
+                    <div class="bento-overlay">
+                        <h4>Kitchen</h4>
+                        <p>Fully equipped</p>
+                    </div>
+                </div>
+                <!-- Item 4: Sitting area — middle single -->
+                <div class="bento-item" style="grid-column: 3 / 4; grid-row: 2 / 3;" data-title="Sitting Area"
+                    data-desc="Elegant lounge with curated art" data-src="brand_assets/IMG_2494.JPG.jpeg">
+                    <img src="brand_assets/IMG_2494.JPG.jpeg" alt="Stylish sitting area" loading="lazy" width="600"
+                        height="400">
+                    <div class="bento-overlay">
+                        <h4>Sitting Area</h4>
+                        <p>Curated art &amp; lounge</p>
+                    </div>
+                </div>
+                <!-- Item 5: Dining — bottom-left single -->
+                <div class="bento-item" style="grid-column: 1 / 2; grid-row: 3 / 4;" data-title="Dining Room"
+                    data-desc="Intimate dining space" data-src="brand_assets/IMG_2484.JPG.jpeg">
+                    <img src="brand_assets/IMG_2484.JPG.jpeg" alt="Elegant dining room" loading="lazy" width="600"
+                        height="400">
+                    <div class="bento-overlay">
+                        <h4>Dining Room</h4>
+                        <p>Intimate dining space</p>
+                    </div>
+                </div>
+                <!-- Item 6: Bedroom view — bottom wide 2×1 -->
+                <div class="bento-item" style="grid-column: 2 / 4; grid-row: 3 / 4;" data-title="Bedroom View"
+                    data-desc="Warm ambient lighting" data-src="brand_assets/IMG_2418.JPG.jpeg">
+                    <img src="brand_assets/IMG_2418.JPG.jpeg" alt="Bedroom ambient view" loading="lazy" width="800"
+                        height="400">
+                    <div class="bento-overlay">
+                        <h4>Bedroom View</h4>
+                        <p>Warm ambient lighting</p>
+                    </div>
+                </div>
+                <!-- Item 7: Interior detail — bottom-right single -->
+                <div class="bento-item" style="grid-column: 4 / 5; grid-row: 3 / 4;" data-title="Interior Details"
+                    data-desc="Thoughtfully curated finishes" data-src="brand_assets/IMG_2490.JPG.jpeg">
+                    <img src="brand_assets/IMG_2490.JPG.jpeg" alt="Interior details" loading="lazy" width="600"
+                        height="400">
+                    <div class="bento-overlay">
+                        <h4>Interior Details</h4>
+                        <p>Curated finishes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Modal (Lightbox) -->
+    <div class="gallery-modal" id="galleryModal">
+        <button class="modal-close" id="modalClose" aria-label="Close gallery">&times;</button>
+        <div class="modal-img-wrap">
+            <img src="" alt="" id="modalImg">
+            <div class="modal-caption">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDesc"></p>
+            </div>
+        </div>
+    </div>
+    <!-- Thumbnail Dock -->
+    <div class="thumb-dock" id="thumbDock"></div>
+
+    <!-- ==================== SECTION 5: WHY AJ MAISON ==================== -->
+    <section id="why" class="section-dark py-28 relative overflow-hidden" style="background: #1A1A2E;">
+        <div class="absolute bottom-0 right-0 w-80 h-80 rounded-full opacity-[0.08]"
+            style="background: radial-gradient(circle, #B8922A, transparent 70%);"></div>
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <!-- Left: Image + Quote -->
+                <div class="relative fade-up">
+                    <div class="relative overflow-hidden rounded">
+                        <img src="brand_assets/IMG_2410.JPG.jpeg"
+                            alt="Beautifully designed interior of AJ Maison luxury shortlet"
+                            class="why-image w-full h-auto object-cover" loading="lazy" width="600" height="700">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent mix-blend-multiply">
+                        </div>
+                    </div>
+                    <!-- Floating quote -->
+                    <div
+                        class="floating-quote absolute -bottom-6 -right-4 lg:-right-8 bg-aj-navy/95 backdrop-blur-sm border border-aj-gold/20 p-6 max-w-xs rounded">
+                        <p class="font-display text-lg italic text-aj-parchment/80 leading-relaxed">"Not just a stay —
+                            an experience rooted in culture and comfort."</p>
+                        <span class="label-tag mt-3 block">— AJ Maison</span>
+                    </div>
+                </div>
+
+                <!-- Right: Content -->
+                <div>
+                    <span class="label-tag fade-up block mb-4">Why AJ Maison</span>
+                    <h2 class="heading-h2 text-aj-parchment fade-up stagger-1 mb-10">Not Just a Stay,<br>An Experience
+                    </h2>
+
+                    <div class="space-y-6">
+                        <div class="value-block border-l-2 border-aj-gold/40 pl-6 fade-up stagger-1">
+                            <h3 class="font-display text-lg text-aj-parchment font-normal mb-2">Artfully Curated</h3>
+                            <p class="body-text text-aj-parchment/50 text-sm">Every piece, every texture, every corner —
+                                designed with intention and aesthetic sensibility.</p>
+                        </div>
+                        <div class="value-block border-l-2 border-aj-gold/40 pl-6 fade-up stagger-2">
+                            <h3 class="font-display text-lg text-aj-parchment font-normal mb-2">Culturally Rooted</h3>
+                            <p class="body-text text-aj-parchment/50 text-sm">A space that celebrates Lagos — its
+                                energy, art, and warmth — woven into every detail.</p>
+                        </div>
+                        <div class="value-block border-l-2 border-aj-gold/40 pl-6 fade-up stagger-3">
+                            <h3 class="font-display text-lg text-aj-parchment font-normal mb-2">Seamless Booking</h3>
+                            <p class="body-text text-aj-parchment/50 text-sm">Book directly via WhatsApp. No middlemen,
+                                no hidden fees, no surprises.</p>
+                        </div>
+                        <div class="value-block border-l-2 border-aj-gold/40 pl-6 fade-up stagger-4">
+                            <h3 class="font-display text-lg text-aj-parchment font-normal mb-2">Privacy &amp; Security
+                            </h3>
+                            <p class="body-text text-aj-parchment/50 text-sm">Gated estate, 24-hour security, and
+                                complete privacy for your peace of mind.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SECTION 6: GUEST REVIEWS (Scrolling Columns) ==================== -->
+    <section id="reviews" class="section-light py-28" style="background: #F8F5F0;">
+        <div class="max-w-6xl mx-auto px-6">
+            <!-- Header -->
+            <div class="section-header text-center mb-12 fade-up">
+                <span class="label-tag block mb-4">Guest Experiences</span>
+                <h2 class="heading-h2 text-aj-charcoal">What Our Guests Say</h2>
+                <p class="body-text text-aj-charcoal/50 mt-4 max-w-md mx-auto text-sm">See what our guests have to say
+                    about their stay at AJ Maison.</p>
+                <div class="gold-divider max-w-xs mx-auto mt-8"></div>
+            </div>
+
+            <!-- Elfsight Google Reviews -->
+            <script src="https://elfsightcdn.com/platform.js" async></script>
+            <div class="elfsight-app-404a93f3-8a70-4030-9151-e4b03342c767" data-elfsight-app-lazy></div>
+
+            <!-- OLD scrolling columns (replaced by Elfsight) -->
+            <div style="display:none;">
+            <div class="testimonial-mask flex justify-center gap-6 overflow-hidden" style="max-height: 740px;">
+
+                <!-- Column 1 (always visible) -->
+                <div class="w-full max-w-xs flex-shrink-0">
+                    <div class="testimonial-col testimonial-col-1 flex flex-col gap-6 pb-6">
+                        <!-- Set 1 -->
+                        <div class="testimonial-card">
+                            <div class="flex gap-0.5 mb-3"><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg></div>
+                            <p class="font-display text-sm italic text-aj-charcoal/80 leading-relaxed">"The apartment
+                                was spotless, beautifully furnished, and the host was incredibly responsive. Best
+                                shortlet experience in Lagos — hands down."</p>
+                            <div class="flex items-center gap-3 mt-5">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Chioma A."
+                                    class="w-10 h-10 rounded-full object-cover" width="40" height="40" loading="lazy">
+                                <div>
+                                    <div class="font-body text-sm font-medium text-aj-charcoal tracking-tight">Chioma A.
+                                    </div>
+                                    <div class="font-body text-xs text-aj-charcoal/50 tracking-tight">Lagos, Nigeria
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="flex gap-0.5 mb-3"><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg></div>
+                            <p class="font-display text-sm italic text-aj-charcoal/80 leading-relaxed">"Came from London
+                                for my sister's wedding. The apartment felt like home — better, actually. Will
+                                definitely book again on my next visit."</p>
+                            <div class="flex items-center gap-3 mt-5">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="David O."
+                                    class="w-10 h-10 rounded-full object-cover" width="40" height="40" loading="lazy">
+                                <div>
+                                    <div class="font-body text-sm font-medium text-aj-charcoal tracking-tight">David O.
+                                    </div>
+                                    <div class="font-body text-xs text-aj-charcoal/50 tracking-tight">London, UK</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="flex gap-0.5 mb-3"><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg></div>
+                            <p class="font-display text-sm italic text-aj-charcoal/80 leading-relaxed">"Perfect for my
+                                business trip. Fast WiFi, quiet neighbourhood, and the kitchen was a lifesaver. Felt
+                                like a boutique hotel but with real character."</p>
+                            <div class="flex items-center gap-3 mt-5">
+                                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Amara T."
+                                    class="w-10 h-10 rounded-full object-cover" width="40" height="40" loading="lazy">
+                                <div>
+                                    <div class="font-body text-sm font-medium text-aj-charcoal tracking-tight">Amara T.
+                                    </div>
+                                    <div class="font-body text-xs text-aj-charcoal/50 tracking-tight">Atlanta, USA</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Duplicate set for seamless loop -->
+                        <div class="testimonial-card">
+                            <div class="flex gap-0.5 mb-3"><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg></div>
+                            <p class="font-display text-sm italic text-aj-charcoal/80 leading-relaxed">"The apartment
+                                was spotless, beautifully furnished, and the host was incredibly responsive. Best
+                                shortlet experience in Lagos — hands down."</p>
+                            <div class="flex items-center gap-3 mt-5">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Chioma A."
+                                    class="w-10 h-10 rounded-full object-cover" width="40" height="40" loading="lazy">
+                                <div>
+                                    <div class="font-body text-sm font-medium text-aj-charcoal tracking-tight">Chioma A.
+                                    </div>
+                                    <div class="font-body text-xs text-aj-charcoal/50 tracking-tight">Lagos, Nigeria
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="flex gap-0.5 mb-3"><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg></div>
+                            <p class="font-display text-sm italic text-aj-charcoal/80 leading-relaxed">"Came from London
+                                for my sister's wedding. The apartment felt like home — better, actually. Will
+                                definitely book again on my next visit."</p>
+                            <div class="flex items-center gap-3 mt-5">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="David O."
+                                    class="w-10 h-10 rounded-full object-cover" width="40" height="40" loading="lazy">
+                                <div>
+                                    <div class="font-body text-sm font-medium text-aj-charcoal tracking-tight">David O.
+                                    </div>
+                                    <div class="font-body text-xs text-aj-charcoal/50 tracking-tight">London, UK</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="flex gap-0.5 mb-3"><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg></div>
+                            <p class="font-display text-sm italic text-aj-charcoal/80 leading-relaxed">"Perfect for my
+                                business trip. Fast WiFi, quiet neighbourhood, and the kitchen was a lifesaver. Felt
+                                like a boutique hotel but with real character."</p>
+                            <div class="flex items-center gap-3 mt-5">
+                                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Amara T."
+                                    class="w-10 h-10 rounded-full object-cover" width="40" height="40" loading="lazy">
+                                <div>
+                                    <div class="font-body text-sm font-medium text-aj-charcoal tracking-tight">Amara T.
+                                    </div>
+                                    <div class="font-body text-xs text-aj-charcoal/50 tracking-tight">Atlanta, USA</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2 (hidden on mobile, visible md+) -->
+                <div class="w-full max-w-xs flex-shrink-0 hidden md:block">
+                    <div class="testimonial-col testimonial-col-2 flex flex-col gap-6 pb-6">
+                        <div class="testimonial-card">
+                            <div class="flex gap-0.5 mb-3"><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg></div>
+                            <p class="font-display text-sm italic text-aj-charcoal/80 leading-relaxed">"We hosted our
+                                family reunion here and everyone was impressed. The space is generous, the decor is
+                                tasteful, and the location is unbeatable."</p>
+                            <div class="flex items-center gap-3 mt-5">
+                                <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Emeka N."
+                                    class="w-10 h-10 rounded-full object-cover" width="40" height="40" loading="lazy">
+                                <div>
+                                    <div class="font-body text-sm font-medium text-aj-charcoal tracking-tight">Emeka N.
+                                    </div>
+                                    <div class="font-body text-xs text-aj-charcoal/50 tracking-tight">Abuja, Nigeria
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="flex gap-0.5 mb-3"><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg></div>
+                            <p class="font-display text-sm italic text-aj-charcoal/80 leading-relaxed">"As a frequent
+                                visitor to Lagos, I've tried many shortlets. AJ Maison is now my go-to. The attention to
+                                detail is remarkable."</p>
+                            <div class="flex items-center gap-3 mt-5">
+                                <img src="https://randomuser.me/api/portraits/women/26.jpg" alt="Folake M."
+                                    class="w-10 h-10 rounded-full object-cover" width="40" height="40" loading="lazy">
+                                <div>
+                                    <div class="font-body text-sm font-medium text-aj-charcoal tracking-tight">Folake M.
+                                    </div>
+                                    <div class="font-body text-xs text-aj-charcoal/50 tracking-tight">Houston, USA</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="flex gap-0.5 mb-3"><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg></div>
+                            <p class="font-display text-sm italic text-aj-charcoal/80 leading-relaxed">"Booked for a
+                                work trip and was blown away. The smart TV, fast WiFi, and 24/7 power made it perfect
+                                for remote work in Lagos."</p>
+                            <div class="flex items-center gap-3 mt-5">
+                                <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="Tunde B."
+                                    class="w-10 h-10 rounded-full object-cover" width="40" height="40" loading="lazy">
+                                <div>
+                                    <div class="font-body text-sm font-medium text-aj-charcoal tracking-tight">Tunde B.
+                                    </div>
+                                    <div class="font-body text-xs text-aj-charcoal/50 tracking-tight">Toronto, Canada
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Duplicate for loop -->
+                        <div class="testimonial-card">
+                            <p class="font-display text-sm italic text-aj-charcoal/80 leading-relaxed">"We hosted our
+                                family reunion here and everyone was impressed. The space is generous, the decor is
+                                tasteful, and the location is unbeatable."</p>
+                            <div class="flex items-center gap-3 mt-5">
+                                <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Emeka N."
+                                    class="w-10 h-10 rounded-full object-cover" width="40" height="40" loading="lazy">
+                                <div>
+                                    <div class="font-body text-sm font-medium text-aj-charcoal tracking-tight">Emeka N.
+                                    </div>
+                                    <div class="font-body text-xs text-aj-charcoal/50 tracking-tight">Abuja, Nigeria
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <p class="font-display text-sm italic text-aj-charcoal/80 leading-relaxed">"As a frequent
+                                visitor to Lagos, I've tried many shortlets. AJ Maison is now my go-to. The attention to
+                                detail is remarkable."</p>
+                            <div class="flex items-center gap-3 mt-5">
+                                <img src="https://randomuser.me/api/portraits/women/26.jpg" alt="Folake M."
+                                    class="w-10 h-10 rounded-full object-cover" width="40" height="40" loading="lazy">
+                                <div>
+                                    <div class="font-body text-sm font-medium text-aj-charcoal tracking-tight">Folake M.
+                                    </div>
+                                    <div class="font-body text-xs text-aj-charcoal/50 tracking-tight">Houston, USA</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <p class="font-display text-sm italic text-aj-charcoal/80 leading-relaxed">"Booked for a
+                                work trip and was blown away. The smart TV, fast WiFi, and 24/7 power made it perfect
+                                for remote work in Lagos."</p>
+                            <div class="flex items-center gap-3 mt-5">
+                                <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="Tunde B."
+                                    class="w-10 h-10 rounded-full object-cover" width="40" height="40" loading="lazy">
+                                <div>
+                                    <div class="font-body text-sm font-medium text-aj-charcoal tracking-tight">Tunde B.
+                                    </div>
+                                    <div class="font-body text-xs text-aj-charcoal/50 tracking-tight">Toronto, Canada
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 3 (hidden on mobile+tablet, visible lg+) -->
+                <div class="w-full max-w-xs flex-shrink-0 hidden lg:block">
+                    <div class="testimonial-col testimonial-col-3 flex flex-col gap-6 pb-6">
+                        <div class="testimonial-card">
+                            <div class="flex gap-0.5 mb-3"><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg></div>
+                            <p class="font-display text-sm italic text-aj-charcoal/80 leading-relaxed">"The check-in was
+                                seamless, the apartment was exactly as pictured, and the neighbourhood felt safe. A
+                                truly five-star shortlet experience."</p>
+                            <div class="flex items-center gap-3 mt-5">
+                                <img src="https://randomuser.me/api/portraits/women/90.jpg" alt="Ngozi I."
+                                    class="w-10 h-10 rounded-full object-cover" width="40" height="40" loading="lazy">
+                                <div>
+                                    <div class="font-body text-sm font-medium text-aj-charcoal tracking-tight">Ngozi I.
+                                    </div>
+                                    <div class="font-body text-xs text-aj-charcoal/50 tracking-tight">Lagos, Nigeria
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="flex gap-0.5 mb-3"><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg></div>
+                            <p class="font-display text-sm italic text-aj-charcoal/80 leading-relaxed">"My wife and I
+                                stayed for two weeks. The kitchen was fully stocked, power never went off, and the host
+                                responded within minutes. Incredible value."</p>
+                            <div class="flex items-center gap-3 mt-5">
+                                <img src="https://randomuser.me/api/portraits/men/86.jpg" alt="James K."
+                                    class="w-10 h-10 rounded-full object-cover" width="40" height="40" loading="lazy">
+                                <div>
+                                    <div class="font-body text-sm font-medium text-aj-charcoal tracking-tight">James K.
+                                    </div>
+                                    <div class="font-body text-xs text-aj-charcoal/50 tracking-tight">Nairobi, Kenya
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="flex gap-0.5 mb-3"><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor"
+                                    viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg><svg class="w-3.5 h-3.5 text-aj-gold" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg></div>
+                            <p class="font-display text-sm italic text-aj-charcoal/80 leading-relaxed">"Brought my mum
+                                from the UK and she didn't want to leave. The apartment has that warm, curated feel that
+                                makes you forget you're in a rental."</p>
+                            <div class="flex items-center gap-3 mt-5">
+                                <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Ada C."
+                                    class="w-10 h-10 rounded-full object-cover" width="40" height="40" loading="lazy">
+                                <div>
+                                    <div class="font-body text-sm font-medium text-aj-charcoal tracking-tight">Ada C.
+                                    </div>
+                                    <div class="font-body text-xs text-aj-charcoal/50 tracking-tight">Manchester, UK
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Duplicate for loop -->
+                        <div class="testimonial-card">
+                            <p class="font-display text-sm italic text-aj-charcoal/80 leading-relaxed">"The check-in was
+                                seamless, the apartment was exactly as pictured, and the neighbourhood felt safe. A
+                                truly five-star shortlet experience."</p>
+                            <div class="flex items-center gap-3 mt-5">
+                                <img src="https://randomuser.me/api/portraits/women/90.jpg" alt="Ngozi I."
+                                    class="w-10 h-10 rounded-full object-cover" width="40" height="40" loading="lazy">
+                                <div>
+                                    <div class="font-body text-sm font-medium text-aj-charcoal tracking-tight">Ngozi I.
+                                    </div>
+                                    <div class="font-body text-xs text-aj-charcoal/50 tracking-tight">Lagos, Nigeria
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <p class="font-display text-sm italic text-aj-charcoal/80 leading-relaxed">"My wife and I
+                                stayed for two weeks. The kitchen was fully stocked, power never went off, and the host
+                                responded within minutes. Incredible value."</p>
+                            <div class="flex items-center gap-3 mt-5">
+                                <img src="https://randomuser.me/api/portraits/men/86.jpg" alt="James K."
+                                    class="w-10 h-10 rounded-full object-cover" width="40" height="40" loading="lazy">
+                                <div>
+                                    <div class="font-body text-sm font-medium text-aj-charcoal tracking-tight">James K.
+                                    </div>
+                                    <div class="font-body text-xs text-aj-charcoal/50 tracking-tight">Nairobi, Kenya
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <p class="font-display text-sm italic text-aj-charcoal/80 leading-relaxed">"Brought my mum
+                                from the UK and she didn't want to leave. The apartment has that warm, curated feel that
+                                makes you forget you're in a rental."</p>
+                            <div class="flex items-center gap-3 mt-5">
+                                <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Ada C."
+                                    class="w-10 h-10 rounded-full object-cover" width="40" height="40" loading="lazy">
+                                <div>
+                                    <div class="font-body text-sm font-medium text-aj-charcoal tracking-tight">Ada C.
+                                    </div>
+                                    <div class="font-body text-xs text-aj-charcoal/50 tracking-tight">Manchester, UK
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </div><!-- /hidden old testimonials -->
+        </div>
+    </section>
+
+    <!-- ==================== SECTION 7: BOOKING / INQUIRY ==================== -->
+    <section id="booking" class="section-dark py-28 relative overflow-hidden" style="background: #1A1A2E;">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full opacity-[0.1]"
+            style="background: radial-gradient(circle, #B8922A, transparent 60%);"></div>
+        <div class="max-w-3xl mx-auto px-6 text-center relative z-10">
+            <span class="label-tag fade-up block mb-4">Book Your Stay</span>
+            <h2 class="heading-h2 text-aj-parchment fade-up stagger-1 mb-6">Ready to Experience<br>AJ Maison?</h2>
+            <p class="body-text text-aj-parchment/50 max-w-lg mx-auto mb-10 fade-up stagger-2">Reach out directly via
+                WhatsApp or phone. No booking fees, no middlemen — just a seamless, personal experience.</p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-10 fade-up stagger-3">
+                <a href="https://wa.me/2348091528083?text=Hello%2C%20I%E2%80%99d%20like%20to%20book%20AJ%20Maison%20Shortlet%20in%20Lekki."
+                    class="btn-primary">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                    </svg>
+                    Chat on WhatsApp
+                </a>
+                <a href="tel:+2348091528083" class="btn-ghost">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                    </svg>
+                    Call Us Directly
+                </a>
+            </div>
+
+            <p class="font-body text-xs tracking-wider text-aj-gold/70 uppercase mb-10 fade-up stagger-4">We respond
+                within 30 minutes</p>
+
+            <!-- What's Included -->
+            <div class="included-card glass-card p-8 max-w-md mx-auto text-left fade-up stagger-5">
+                <h3 class="font-display text-lg text-aj-parchment font-normal mb-5">What's Included</h3>
+                <ul class="space-y-3">
+                    <li class="flex items-center gap-3 text-sm text-aj-parchment/60">
+                        <svg class="w-4 h-4 text-aj-gold flex-shrink-0" fill="none" stroke="currentColor"
+                            stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                        </svg>
+                        Fully furnished apartment
+                    </li>
+                    <li class="flex items-center gap-3 text-sm text-aj-parchment/60">
+                        <svg class="w-4 h-4 text-aj-gold flex-shrink-0" fill="none" stroke="currentColor"
+                            stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                        </svg>
+                        24/7 power &amp; high-speed WiFi
+                    </li>
+                    <li class="flex items-center gap-3 text-sm text-aj-parchment/60">
+                        <svg class="w-4 h-4 text-aj-gold flex-shrink-0" fill="none" stroke="currentColor"
+                            stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                        </svg>
+                        Smart TV with Netflix
+                    </li>
+                    <li class="flex items-center gap-3 text-sm text-aj-parchment/60">
+                        <svg class="w-4 h-4 text-aj-gold flex-shrink-0" fill="none" stroke="currentColor"
+                            stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                        </svg>
+                        Professional cleaning before check-in
+                    </li>
+                    <li class="flex items-center gap-3 text-sm text-aj-parchment/60">
+                        <svg class="w-4 h-4 text-aj-gold flex-shrink-0" fill="none" stroke="currentColor"
+                            stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                        </svg>
+                        Secure parking &amp; gated estate
+                    </li>
+                    <li class="flex items-center gap-3 text-sm text-aj-parchment/60">
+                        <svg class="w-4 h-4 text-aj-gold flex-shrink-0" fill="none" stroke="currentColor"
+                            stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                        </svg>
+                        Dedicated concierge support
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SECTION 8: FAQ ==================== -->
+    <section id="faq" class="section-light py-28" style="background: #F8F5F0;">
+        <div class="max-w-2xl mx-auto px-6">
+            <div class="section-header text-center mb-16">
+                <span class="label-tag fade-up block mb-4">Frequently Asked</span>
+                <h2 class="heading-h2 text-aj-charcoal fade-up stagger-1">Common Questions</h2>
+                <div class="gold-divider max-w-xs mx-auto mt-8 fade-up stagger-2"></div>
+            </div>
+
+            <div class="space-y-4">
+                <details class="group light-card fade-up stagger-1">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer">
+                        <span class="font-body text-sm font-semibold text-aj-charcoal pr-4">Where is AJ Maison
+                            located?</span>
+                        <span
+                            class="faq-icon text-aj-gold text-xl font-light transition-transform duration-300 flex-shrink-0">+</span>
+                    </summary>
+                    <div class="px-6 pb-6 pt-0">
+                        <p class="body-text text-aj-charcoal/60 text-sm">AJ Maison Shortlet is located in Ikate, Lekki,
+                            Lagos — one of the most sought-after neighbourhoods for short-term stays. Close to Lekki
+                            Phase 1, Victoria Island, and major business districts.</p>
+                    </div>
+                </details>
+
+                <details class="group light-card fade-up stagger-2">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer">
+                        <span class="font-body text-sm font-semibold text-aj-charcoal pr-4">What is the minimum
+                            stay?</span>
+                        <span
+                            class="faq-icon text-aj-gold text-xl font-light transition-transform duration-300 flex-shrink-0">+</span>
+                    </summary>
+                    <div class="px-6 pb-6 pt-0">
+                        <p class="body-text text-aj-charcoal/60 text-sm">Our minimum stay is 2 nights. We also offer
+                            weekly and monthly rates at a discount — reach out via WhatsApp for custom quotes.</p>
+                    </div>
+                </details>
+
+                <details class="group light-card fade-up stagger-3">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer">
+                        <span class="font-body text-sm font-semibold text-aj-charcoal pr-4">Is parking available?</span>
+                        <span
+                            class="faq-icon text-aj-gold text-xl font-light transition-transform duration-300 flex-shrink-0">+</span>
+                    </summary>
+                    <div class="px-6 pb-6 pt-0">
+                        <p class="body-text text-aj-charcoal/60 text-sm">Yes, secure parking is available within the
+                            gated compound. There is a dedicated parking space for one vehicle.</p>
+                    </div>
+                </details>
+
+                <details class="group light-card fade-up stagger-4">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer">
+                        <span class="font-body text-sm font-semibold text-aj-charcoal pr-4">What payment methods do you
+                            accept?</span>
+                        <span
+                            class="faq-icon text-aj-gold text-xl font-light transition-transform duration-300 flex-shrink-0">+</span>
+                    </summary>
+                    <div class="px-6 pb-6 pt-0">
+                        <p class="body-text text-aj-charcoal/60 text-sm">We accept bank transfers (NGN and USD), card
+                            payments, and select mobile payment platforms. Payment details are shared after booking
+                            confirmation via WhatsApp.</p>
+                    </div>
+                </details>
+
+                <details class="group light-card fade-up stagger-5">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer">
+                        <span class="font-body text-sm font-semibold text-aj-charcoal pr-4">Is a security deposit
+                            required?</span>
+                        <span
+                            class="faq-icon text-aj-gold text-xl font-light transition-transform duration-300 flex-shrink-0">+</span>
+                    </summary>
+                    <div class="px-6 pb-6 pt-0">
+                        <p class="body-text text-aj-charcoal/60 text-sm">Yes, a refundable caution deposit is collected
+                            before check-in and returned within 24 hours of checkout, subject to an apartment
+                            inspection.</p>
+                    </div>
+                </details>
+
+                <details class="group light-card fade-up stagger-6">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer">
+                        <span class="font-body text-sm font-semibold text-aj-charcoal pr-4">What are check-in and
+                            check-out times?</span>
+                        <span
+                            class="faq-icon text-aj-gold text-xl font-light transition-transform duration-300 flex-shrink-0">+</span>
+                    </summary>
+                    <div class="px-6 pb-6 pt-0">
+                        <p class="body-text text-aj-charcoal/60 text-sm">Check-in is from 3:00 PM and check-out is by
+                            11:00 AM. Early check-in or late check-out may be arranged — contact us via WhatsApp to
+                            discuss.</p>
+                    </div>
+                </details>
+
+                <details class="group light-card fade-up">
+                    <summary class="flex items-center justify-between p-6 cursor-pointer">
+                        <span class="font-body text-sm font-semibold text-aj-charcoal pr-4">Do you offer airport
+                            pickup?</span>
+                        <span
+                            class="faq-icon text-aj-gold text-xl font-light transition-transform duration-300 flex-shrink-0">+</span>
+                    </summary>
+                    <div class="px-6 pb-6 pt-0">
+                        <p class="body-text text-aj-charcoal/60 text-sm">Yes, we can arrange airport pickup and drop-off
+                            from Murtala Muhammed International Airport. Let us know your flight details via WhatsApp
+                            and we'll coordinate the transfer.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SECTION 9: FINAL CTA ==================== -->
+    <section class="section-dark py-28 relative overflow-hidden" style="background: #1A1A2E;">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full opacity-[0.14]"
+            style="background: radial-gradient(circle, #B8922A, transparent 50%);"></div>
+        <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full border border-aj-gold/[0.06] pointer-events-none">
+        </div>
+        <div class="max-w-3xl mx-auto px-6 text-center relative z-10">
+            <h2 class="heading-h2 text-aj-parchment fade-up mb-6">Your Perfect Lagos<br>Stay Awaits</h2>
+            <p class="body-text text-aj-parchment/50 max-w-md mx-auto mb-10 fade-up stagger-1">Book directly. No
+                middleman. No surprises.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center fade-up stagger-2">
+                <a href="https://wa.me/2348091528083?text=Hello%2C%20I%E2%80%99d%20like%20to%20book%20AJ%20Maison%20Shortlet%20in%20Lekki."
+                    class="btn-primary">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                    </svg>
+                    Book on WhatsApp
+                </a>
+                <a href="tel:+2348091528083" class="btn-ghost">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                    </svg>
+                    Call Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SECTION 10: FOOTER ==================== -->
+    <footer style="background: #0a0a0a;">
+        <div class="max-w-6xl mx-auto px-6 py-16">
+            <div class="footer-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <!-- Col 1: Logo + tagline -->
+                <div>
+                    <img src="brand_assets/Ajmaison+ (1).png" alt="AJ Maison Logo" class="h-10 sm:h-14 w-auto mb-4"
+                        width="140" height="56">
+                    <p class="body-text text-aj-parchment/40 text-sm">Comfort. Simplicity. Luxury.<br>Your curated home
+                        in Lagos.</p>
+                </div>
+                <!-- Col 2: Quick Links -->
+                <div>
+                    <h4 class="label-tag mb-5">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#features"
+                                class="font-body text-sm text-aj-parchment/50 hover:text-aj-gold transition-colors duration-300">Features</a>
+                        </li>
+                        <li><a href="#gallery"
+                                class="font-body text-sm text-aj-parchment/50 hover:text-aj-gold transition-colors duration-300">Gallery</a>
+                        </li>
+                        <li><a href="#why"
+                                class="font-body text-sm text-aj-parchment/50 hover:text-aj-gold transition-colors duration-300">Why
+                                Us</a></li>
+                        <li><a href="#reviews"
+                                class="font-body text-sm text-aj-parchment/50 hover:text-aj-gold transition-colors duration-300">Reviews</a>
+                        </li>
+                        <li><a href="#faq"
+                                class="font-body text-sm text-aj-parchment/50 hover:text-aj-gold transition-colors duration-300">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Col 3: Contact -->
+                <div style="overflow-wrap: break-word; word-break: break-word;">
+                    <h4 class="label-tag mb-5">Contact</h4>
+                    <ul class="space-y-3">
+                        <li><a href="https://wa.me/2348091528083"
+                                class="font-body text-sm text-aj-parchment/50 hover:text-aj-gold transition-colors duration-300">+234
+                                809 152 8083</a></li>
+                        <li><a href="mailto:info@ajmaisonshortlet.com"
+                                class="font-body text-sm text-aj-parchment/50 hover:text-aj-gold transition-colors duration-300">info@ajmaisonshortlet.com</a>
+                        </li>
+                        <li><a href="https://wa.me/2348091528083"
+                                class="font-body text-sm text-aj-parchment/50 hover:text-aj-gold transition-colors duration-300">WhatsApp</a>
+                        </li>
+                        <li><span class="font-body text-sm text-aj-parchment/50">Ikate, Lekki, Lagos, Nigeria</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Col 4: Legal -->
+                <div>
+                    <h4 class="label-tag mb-5">Legal</h4>
+                    <ul class="space-y-3">
+                        <li><a href="privacy.html"
+                                class="font-body text-sm text-aj-parchment/50 hover:text-aj-gold transition-colors duration-300">Privacy
+                                Policy</a></li>
+                        <li><a href="terms.html"
+                                class="font-body text-sm text-aj-parchment/50 hover:text-aj-gold transition-colors duration-300">Terms
+                                of Service</a></li>
+                        <li><a href="cancellation.html"
+                                class="font-body text-sm text-aj-parchment/50 hover:text-aj-gold transition-colors duration-300">Cancellation
+                                Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright bar -->
+        <div class="border-t border-white/[0.06]">
+            <div class="max-w-6xl mx-auto px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <p class="font-body text-xs text-aj-parchment/30">&copy; 2026 AJ Maison. All rights reserved.</p>
+                <div class="flex gap-4">
+                    <!-- Instagram -->
+                    <a href="#"
+                        class="social-icon p-2 text-aj-parchment/30 hover:text-aj-gold transition-colors duration-300"
+                        aria-label="Instagram">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                        </svg>
+                    </a>
+                    <!-- Facebook -->
+                    <a href="#"
+                        class="social-icon p-2 text-aj-parchment/30 hover:text-aj-gold transition-colors duration-300"
+                        aria-label="Facebook">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile sticky booking bar -->
+    <div
+        class="fixed bottom-0 left-0 w-full lg:hidden z-[999] bg-aj-black/95 backdrop-blur-sm border-t border-aj-gold/10 px-4 py-3 flex gap-3">
+        <a href="https://wa.me/2348091528083?text=Hello%2C%20I%E2%80%99d%20like%20to%20book%20AJ%20Maison%20Shortlet%20in%20Lekki."
+            class="btn-primary flex-1 justify-center text-xs py-3 px-4">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            Book on WhatsApp
+        </a>
+        <a href="tel:+2348091528083" class="btn-ghost flex-shrink-0 text-xs py-3 px-4">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+            </svg>
+            Call
+        </a>
+    </div>
+
+    <!-- FAQPage JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Where is AJ Maison located?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "AJ Maison Shortlet is located in Ikate, Lekki, Lagos — one of the most sought-after neighbourhoods for short-term stays."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the minimum stay?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Our minimum stay is 2 nights. We also offer weekly and monthly rates at a discount."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is parking available?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, secure parking is available within the gated compound with a dedicated parking space."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What payment methods do you accept?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "We accept bank transfers (NGN and USD), card payments, and select mobile payment platforms."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is a security deposit required?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, a refundable caution deposit is collected before check-in and returned within 24 hours of checkout."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are check-in and check-out times?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Check-in is from 3:00 PM and check-out is by 11:00 AM. Early check-in or late check-out may be arranged."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do you offer airport pickup?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, we can arrange airport pickup and drop-off from Murtala Muhammed International Airport."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- JavaScript -->
+    <script>
+        // IntersectionObserver for fade-up animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+        // ── Interactive Hover Button Initializer ──
+        const arrowSVG = '<svg class="btn-hover-arrow" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>';
+
+        document.querySelectorAll('.btn-primary, .btn-ghost').forEach(btn => {
+            // Skip if already initialized
+            if (btn.querySelector('.btn-text')) return;
+
+            // Capture existing inner HTML (text + optional SVG icon)
+            const originalHTML = btn.innerHTML.trim();
+
+            // Build new structure
+            btn.innerHTML =
+                '<span class="btn-text">' + originalHTML + '</span>' +
+                '<span class="btn-hover">' + originalHTML + ' ' + arrowSVG + '</span>' +
+                '<span class="btn-fill"></span>';
+        });
+
+        // Nav scroll state
+        const nav = document.getElementById('mainNav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 60) {
+                nav.classList.add('nav-scrolled');
+            } else {
+                nav.classList.remove('nav-scrolled');
+            }
+        }, { passive: true });
+
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuBackdrop = document.getElementById('menuBackdrop');
+        const bar1 = document.getElementById('bar1');
+        const bar2 = document.getElementById('bar2');
+        const bar3 = document.getElementById('bar3');
+        let menuOpen = false;
+
+        function openMenu() {
+            menuOpen = true;
+            mobileMenu.classList.add('open');
+            menuBackdrop.classList.add('backdrop-visible');
+            menuToggle.setAttribute('aria-expanded', 'true');
+            bar1.style.transform = 'rotate(45deg) translate(4px, 4px)';
+            bar2.style.opacity = '0';
+            bar3.style.transform = 'rotate(-45deg) translate(4px, -4px)';
+        }
+
+        function closeMenu() {
+            menuOpen = false;
+            mobileMenu.classList.remove('open');
+            menuBackdrop.classList.remove('backdrop-visible');
+            menuToggle.setAttribute('aria-expanded', 'false');
+            bar1.style.transform = '';
+            bar2.style.opacity = '';
+            bar3.style.transform = '';
+        }
+
+        menuToggle.addEventListener('click', () => menuOpen ? closeMenu() : openMenu());
+        menuBackdrop.addEventListener('click', closeMenu);
+
+        // Close mobile menu on link click
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', closeMenu);
+        });
+
+        // ===== Interactive Bento Gallery =====
+        (function () {
+            const modal = document.getElementById('galleryModal');
+            const modalImg = document.getElementById('modalImg');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalDesc = document.getElementById('modalDesc');
+            const modalClose = document.getElementById('modalClose');
+            const thumbDock = document.getElementById('thumbDock');
+            const bentoItems = document.querySelectorAll('#bentoGallery .bento-item');
+
+            // Build gallery data array
+            const galleryData = [];
+            bentoItems.forEach((item, i) => {
+                galleryData.push({
+                    id: i,
+                    src: item.dataset.src,
+                    title: item.dataset.title,
+                    desc: item.dataset.desc
+                });
+            });
+
+            let currentIndex = 0;
+
+            // Build thumbnail dock
+            galleryData.forEach((item, i) => {
+                const thumb = document.createElement('div');
+                thumb.className = 'thumb';
+                thumb.innerHTML = `<img src="${item.src}" alt="${item.title}">`;
+                thumb.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    showImage(i);
+                });
+                thumbDock.appendChild(thumb);
+            });
+
+            function showImage(index) {
+                currentIndex = index;
+                const item = galleryData[index];
+                modalImg.src = item.src;
+                modalImg.alt = item.title;
+                modalTitle.textContent = item.title;
+                modalDesc.textContent = item.desc;
+
+                // Update active thumb
+                thumbDock.querySelectorAll('.thumb').forEach((t, i) => {
+                    t.classList.toggle('active-thumb', i === index);
+                });
+
+                // Open modal
+                modal.classList.add('active');
+                thumbDock.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeModal() {
+                modal.classList.remove('active');
+                thumbDock.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+
+            // Click on bento item to open modal
+            bentoItems.forEach((item, i) => {
+                item.addEventListener('click', () => showImage(i));
+            });
+
+            // Close modal
+            modalClose.addEventListener('click', closeModal);
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) closeModal();
+            });
+
+            // Keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (!modal.classList.contains('active')) return;
+                if (e.key === 'Escape') closeModal();
+                if (e.key === 'ArrowRight') showImage((currentIndex + 1) % galleryData.length);
+                if (e.key === 'ArrowLeft') showImage((currentIndex - 1 + galleryData.length) % galleryData.length);
+            });
+
+            // Touch swipe navigation for mobile
+            let touchStartX = 0;
+            let touchStartY = 0;
+            modal.addEventListener('touchstart', (e) => {
+                touchStartX = e.changedTouches[0].screenX;
+                touchStartY = e.changedTouches[0].screenY;
+            }, { passive: true });
+            modal.addEventListener('touchend', (e) => {
+                const dx = e.changedTouches[0].screenX - touchStartX;
+                const dy = e.changedTouches[0].screenY - touchStartY;
+                // Only trigger if horizontal swipe is dominant and > 50px
+                if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) {
+                    if (dx < 0) showImage((currentIndex + 1) % galleryData.length);
+                    else showImage((currentIndex - 1 + galleryData.length) % galleryData.length);
+                }
+            }, { passive: true });
+        })();
+    </script>
+</body>
+
+</html>

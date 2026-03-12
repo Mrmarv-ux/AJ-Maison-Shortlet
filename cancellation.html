@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancellation Policy — AJ Maison Shortlet</title>
+    <meta name="description" content="Cancellation and refund policy for AJ Maison Shortlet, a luxury serviced apartment in Lekki, Lagos.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --gold: #B8922A;
+            --gold-dim: rgba(184, 146, 42, 0.25);
+            --navy: #1A1A2E;
+            --parchment: #F8F5F0;
+            --charcoal: #2C2C2C;
+            --muted: #6B6B6B;
+            --green: #2D6A4F;
+            --green-bg: rgba(45, 106, 79, 0.07);
+            --red: #8B2E2E;
+            --red-bg: rgba(139, 46, 46, 0.07);
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--parchment);
+            color: var(--charcoal);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 0.03;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+        }
+
+        /* ── Header ── */
+        header {
+            background: var(--navy);
+            padding: 2rem 2rem 3rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+        }
+
+        .deco-ring {
+            position: absolute;
+            border-radius: 50%;
+            border: 1px solid rgba(184, 146, 42, 0.07);
+            pointer-events: none;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .header-eyebrow {
+            font-size: 0.65rem;
+            font-weight: 500;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+
+        .header-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(2rem, 5vw, 3.25rem);
+            font-weight: 300;
+            color: var(--parchment);
+            letter-spacing: -0.02em;
+            line-height: 1.1;
+            margin-bottom: 0.75rem;
+        }
+
+        .header-date {
+            font-size: 0.8rem;
+            color: rgba(248, 245, 240, 0.35);
+            letter-spacing: 0.04em;
+        }
+
+        /* ── Back bar ── */
+        .back-bar {
+            background: var(--navy);
+            padding: 0.75rem 2rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .back-link {
+            font-size: 0.75rem;
+            font-weight: 500;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--gold);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            opacity: 0.8;
+            transition: opacity 0.2s;
+        }
+
+        .back-link:hover { opacity: 1; }
+
+        /* ── Main ── */
+        main {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 4rem 2rem 6rem;
+        }
+
+        /* ── Intro ── */
+        .intro {
+            border-left: 2px solid var(--gold);
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 3.5rem;
+            background: rgba(184, 146, 42, 0.04);
+            border-radius: 0 4px 4px 0;
+        }
+
+        .intro p {
+            font-size: 0.9375rem;
+            line-height: 1.75;
+            color: var(--muted);
+        }
+
+        .intro strong { color: var(--charcoal); font-weight: 500; }
+
+        /* ── At-a-glance summary cards ── */
+        .summary-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 3.5rem;
+        }
+
+        .summary-card {
+            border-radius: 6px;
+            padding: 1.5rem;
+            border: 1px solid transparent;
+        }
+
+        .summary-card.green {
+            background: var(--green-bg);
+            border-color: rgba(45, 106, 79, 0.2);
+        }
+
+        .summary-card.red {
+            background: var(--red-bg);
+            border-color: rgba(139, 46, 46, 0.2);
+        }
+
+        .summary-card.neutral {
+            background: rgba(184, 146, 42, 0.05);
+            border-color: rgba(184, 146, 42, 0.2);
+        }
+
+        .card-icon {
+            font-size: 1.25rem;
+            margin-bottom: 0.6rem;
+            display: block;
+        }
+
+        .card-title {
+            font-size: 0.65rem;
+            font-weight: 600;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            margin-bottom: 0.4rem;
+        }
+
+        .summary-card.green .card-title { color: var(--green); }
+        .summary-card.red .card-title { color: var(--red); }
+        .summary-card.neutral .card-title { color: var(--gold); }
+
+        .card-body {
+            font-size: 0.875rem;
+            line-height: 1.6;
+            color: #4A4A4A;
+        }
+
+        .card-body strong { font-weight: 600; }
+
+        /* ── Sections ── */
+        .policy-section {
+            margin-bottom: 3rem;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.55s ease, transform 0.55s ease;
+        }
+
+        .policy-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .section-num {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: var(--gold);
+            line-height: 1;
+            min-width: 1.75rem;
+        }
+
+        .section-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: var(--navy);
+            letter-spacing: -0.01em;
+        }
+
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, var(--gold-dim), transparent);
+            margin-bottom: 1.25rem;
+        }
+
+        .policy-section p {
+            font-size: 0.9375rem;
+            line-height: 1.8;
+            color: #4A4A4A;
+            margin-bottom: 0.85rem;
+        }
+
+        .policy-section p:last-child { margin-bottom: 0; }
+
+        /* ── Lists ── */
+        .policy-list {
+            list-style: none;
+            margin: 0.5rem 0 0.85rem;
+        }
+
+        .policy-list li {
+            font-size: 0.9375rem;
+            line-height: 1.75;
+            color: #4A4A4A;
+            padding: 0.4rem 0 0.4rem 1.5rem;
+            position: relative;
+        }
+
+        .policy-list li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.9rem;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--gold);
+            opacity: 0.6;
+        }
+
+        /* ── Timeline (refund tiers) ── */
+        .timeline {
+            margin: 1.25rem 0;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 10px;
+            bottom: 10px;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--green), var(--gold), var(--red));
+            border-radius: 2px;
+        }
+
+        .timeline-item {
+            padding: 0.85rem 0 0.85rem 1.5rem;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -0.45rem;
+            top: 1.15rem;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 2px solid var(--parchment);
+        }
+
+        .timeline-item.t-green::before { background: var(--green); }
+        .timeline-item.t-amber::before { background: var(--gold); }
+        .timeline-item.t-red::before { background: var(--red); }
+
+        .timeline-label {
+            font-size: 0.65rem;
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            margin-bottom: 0.25rem;
+        }
+
+        .t-green .timeline-label { color: var(--green); }
+        .t-amber .timeline-label { color: var(--gold); }
+        .t-red .timeline-label { color: var(--red); }
+
+        .timeline-text {
+            font-size: 0.9375rem;
+            line-height: 1.65;
+            color: #4A4A4A;
+        }
+
+        .timeline-text strong { font-weight: 600; color: var(--charcoal); }
+
+        /* ── Sub-label ── */
+        .sub-label {
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin: 1.25rem 0 0.5rem;
+        }
+
+        /* ── Note box ── */
+        .note-box {
+            background: rgba(184, 146, 42, 0.06);
+            border: 1px solid rgba(184, 146, 42, 0.2);
+            border-radius: 6px;
+            padding: 1.25rem 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .note-box p {
+            font-size: 0.875rem !important;
+            color: #555 !important;
+            margin-bottom: 0 !important;
+        }
+
+        .note-box strong { color: var(--charcoal) !important; }
+
+        /* ── Contact box ── */
+        .contact-box {
+            background: var(--navy);
+            border-radius: 6px;
+            padding: 1.75rem 2rem;
+            margin-top: 1rem;
+            border: 1px solid rgba(184, 146, 42, 0.2);
+        }
+
+        .contact-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: var(--parchment);
+            margin-bottom: 0.75rem;
+        }
+
+        .contact-row {
+            font-size: 0.875rem;
+            color: rgba(248, 245, 240, 0.6);
+            margin-bottom: 0.4rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .contact-row a {
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        .contact-row a:hover { text-decoration: underline; }
+
+        .contact-dot {
+            width: 4px; height: 4px;
+            border-radius: 50%;
+            background: var(--gold);
+            opacity: 0.5;
+            flex-shrink: 0;
+        }
+
+        /* ── Footer ── */
+        footer {
+            background: var(--navy);
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+        }
+
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+        }
+
+        .footer-brand {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1rem;
+            font-weight: 300;
+            color: rgba(248, 245, 240, 0.4);
+            letter-spacing: 0.05em;
+            margin-bottom: 0.4rem;
+        }
+
+        .footer-copy {
+            font-size: 0.75rem;
+            color: rgba(248, 245, 240, 0.2);
+            letter-spacing: 0.04em;
+        }
+
+        .footer-home {
+            display: inline-block;
+            margin-top: 1rem;
+            font-size: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--gold);
+            text-decoration: none;
+            opacity: 0.7;
+            transition: opacity 0.2s;
+        }
+
+        .footer-home:hover { opacity: 1; }
+
+        /* ── Responsive ── */
+        @media (max-width: 600px) {
+            main { padding: 2.5rem 1.25rem 4rem; }
+            header { padding: 1.75rem 1.25rem 2.5rem; }
+            .summary-grid { grid-template-columns: 1fr; }
+            .section-title { font-size: 1.2rem; }
+            .contact-box { padding: 1.25rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="deco-ring" style="width:300px;height:300px;"></div>
+        <div class="deco-ring" style="width:500px;height:500px;opacity:0.4;"></div>
+        <p class="header-eyebrow">AJ Maison Shortlet · Lagos, Nigeria</p>
+        <h1 class="header-title">Cancellation Policy</h1>
+        <p class="header-date">Last updated: March 2026</p>
+    </header>
+
+    <div class="back-bar">
+        <a href="index.html" class="back-link">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+            Back to Home
+        </a>
+    </div>
+
+    <main>
+
+        <!-- Intro -->
+        <div class="intro">
+            <p>We understand that plans change. This policy outlines your options if you need to cancel or modify a booking at <strong>AJ Maison Shortlet</strong>. We ask that all cancellations be made via <strong>WhatsApp or phone</strong> — the same way you booked.</p>
+        </div>
+
+        <!-- At-a-glance summary -->
+        <div class="summary-grid">
+            <div class="summary-card green">
+                <span class="card-icon">✓</span>
+                <div class="card-title">Full Refund</div>
+                <div class="card-body">Cancel <strong>72+ hours</strong> before check-in</div>
+            </div>
+            <div class="summary-card red">
+                <span class="card-icon">✕</span>
+                <div class="card-title">No Refund</div>
+                <div class="card-body">Cancel <strong>within 72 hours</strong> of check-in</div>
+            </div>
+            <div class="summary-card neutral">
+                <span class="card-icon">◎</span>
+                <div class="card-title">Caution Deposit</div>
+                <div class="card-body">Always refunded within <strong>24 hrs of checkout</strong> if no damage</div>
+            </div>
+            <div class="summary-card red">
+                <span class="card-icon">✕</span>
+                <div class="card-title">No-Show</div>
+                <div class="card-body">Full booking amount is <strong>forfeited</strong></div>
+            </div>
+        </div>
+
+        <!-- 1. Cancellation & Refunds -->
+        <div class="policy-section">
+            <div class="section-header">
+                <span class="section-num">01</span>
+                <h2 class="section-title">Cancellations & Refunds</h2>
+            </div>
+            <div class="section-divider"></div>
+            <p>The following refund tiers apply based on how far in advance you cancel before your scheduled check-in time:</p>
+
+            <div class="timeline">
+                <div class="timeline-item t-green">
+                    <div class="timeline-label">72 hours or more before check-in</div>
+                    <div class="timeline-text"><strong>Full refund.</strong> The total booking amount will be returned to you in full via the original payment method within 3–5 business days.</div>
+                </div>
+                <div class="timeline-item t-amber">
+                    <div class="timeline-label">Between 24 and 72 hours before check-in</div>
+                    <div class="timeline-text"><strong>50% refund.</strong> Half of the booking amount will be refunded. The remaining 50% is retained to cover the loss of availability at short notice.</div>
+                </div>
+                <div class="timeline-item t-red">
+                    <div class="timeline-label">Less than 24 hours before check-in</div>
+                    <div class="timeline-text"><strong>No refund.</strong> Cancellations made within 24 hours of check-in are non-refundable.</div>
+                </div>
+            </div>
+
+            <div class="note-box">
+                <p><strong>Please note:</strong> All cancellation times are measured against your confirmed check-in time of 3:00 PM (WAT). Cancellations must be communicated directly to us via WhatsApp or phone to be valid.</p>
+            </div>
+        </div>
+
+        <!-- 2. Caution Deposit -->
+        <div class="policy-section">
+            <div class="section-header">
+                <span class="section-num">02</span>
+                <h2 class="section-title">Caution Deposit</h2>
+            </div>
+            <div class="section-divider"></div>
+            <p>A refundable caution deposit is collected prior to check-in. This deposit is separate from your booking payment and is handled as follows:</p>
+            <ul class="policy-list">
+                <li>Returned in full within <strong>24 hours of checkout</strong>, provided the apartment is left in good condition</li>
+                <li>May be used to cover the cost of any damages, missing items, or excessive cleaning required</li>
+                <li>In the event of a cancellation, the caution deposit is refunded in full regardless of when you cancel — it is never forfeited due to a cancellation alone</li>
+            </ul>
+        </div>
+
+        <!-- 3. No-Shows -->
+        <div class="policy-section">
+            <div class="section-header">
+                <span class="section-num">03</span>
+                <h2 class="section-title">No-Shows</h2>
+            </div>
+            <div class="section-divider"></div>
+            <p>If you do not arrive on your check-in date and have not contacted us to cancel or reschedule, your booking will be considered a no-show after <strong>3 hours past your agreed check-in time</strong>.</p>
+            <p>No-shows are non-refundable. The full booking amount will be forfeited. The caution deposit will be refunded in full, provided no damages have occurred.</p>
+        </div>
+
+        <!-- 4. Date Changes -->
+        <div class="policy-section">
+            <div class="section-header">
+                <span class="section-num">04</span>
+                <h2 class="section-title">Date Changes & Rescheduling</h2>
+            </div>
+            <div class="section-divider"></div>
+            <p>We are happy to accommodate date changes where possible, subject to availability.</p>
+            <ul class="policy-list">
+                <li>Requests to reschedule must be made at least <strong>72 hours before your original check-in</strong></li>
+                <li>Rescheduling is subject to availability and any applicable rate differences for the new dates</li>
+                <li>Date changes requested within 72 hours of check-in will be treated as a cancellation under the terms in Section 01</li>
+            </ul>
+            <p>To request a date change, contact us via WhatsApp or phone with your original booking details and preferred new dates.</p>
+        </div>
+
+        <!-- 5. Early Departure -->
+        <div class="policy-section">
+            <div class="section-header">
+                <span class="section-num">05</span>
+                <h2 class="section-title">Early Departure</h2>
+            </div>
+            <div class="section-divider"></div>
+            <p>If you choose to check out earlier than your confirmed checkout date, the remaining nights are <strong>non-refundable</strong>. We encourage guests to be certain of their dates before confirming a booking.</p>
+            <p>If exceptional circumstances arise, please contact us directly and we will do our best to find a fair resolution.</p>
+        </div>
+
+        <!-- 6. Exceptional Circumstances -->
+        <div class="policy-section">
+            <div class="section-header">
+                <span class="section-num">06</span>
+                <h2 class="section-title">Exceptional Circumstances</h2>
+            </div>
+            <div class="section-divider"></div>
+            <p>We understand that genuine emergencies happen. In cases of serious illness, bereavement, or other extraordinary events, we will review cancellation requests on a case-by-case basis.</p>
+            <p>To request an exception, please contact us as early as possible with relevant details. We cannot guarantee exceptions but will always try to be reasonable.</p>
+            <div class="note-box">
+                <p><strong>Note:</strong> AJ Maison Shortlet is not liable for cancellations caused by circumstances beyond our control (e.g. utility outages, force majeure events). In such cases, we will offer a reschedule or credit toward a future stay.</p>
+            </div>
+        </div>
+
+        <!-- 7. How to Cancel -->
+        <div class="policy-section">
+            <div class="section-header">
+                <span class="section-num">07</span>
+                <h2 class="section-title">How to Cancel</h2>
+            </div>
+            <div class="section-divider"></div>
+            <p>All cancellations must be made directly through us — not via a third party. To cancel your booking:</p>
+            <ul class="policy-list">
+                <li>Message us on <strong>WhatsApp</strong> or call us directly</li>
+                <li>Include your full name and check-in date</li>
+                <li>Wait for a written confirmation from our team — your cancellation is only valid once confirmed by us</li>
+            </ul>
+            <p>Refunds are processed within <strong>3–5 business days</strong> of a confirmed cancellation, returned via the same payment channel used at booking.</p>
+
+            <div class="contact-box">
+                <div class="contact-name">AJ Maison Shortlet</div>
+                <div class="contact-row">
+                    <span class="contact-dot"></span>
+                    WhatsApp / Phone: available on our homepage
+                </div>
+                <div class="contact-row">
+                    <span class="contact-dot"></span>
+                    <a href="mailto:info@ajmaisonshortlet.com">info@ajmaisonshortlet.com</a>
+                </div>
+                <div class="contact-row">
+                    <span class="contact-dot"></span>
+                    Ikate, Lekki, Lagos, Nigeria
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-brand">AJ Maison Shortlet</div>
+        <div class="footer-copy">Ikate, Lekki, Lagos, Nigeria &nbsp;·&nbsp; info@ajmaisonshortlet.com</div>
+        <a href="index.html" class="footer-home">← Return to Homepage</a>
+    </footer>
+
+    <script>
+        const sections = document.querySelectorAll('.policy-section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+        sections.forEach(s => observer.observe(s));
+    </script>
+    <noscript><style>.policy-section { opacity: 1; transform: none; }</style></noscript>
+
+</body>
+</html>
